@@ -1,5 +1,11 @@
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/out/web.config
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/appsettings.Development.json
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/appsettings.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/out/appsettings.Development.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/out/appsettings.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/out/SkyBridgeSolar.deps.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/out/SkyBridgeSolar.runtimeconfig.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/out/SkyBridgeSolar.staticwebassets.endpoints.json
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/SkyBridgeSolar.staticwebassets.runtime.json
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/SkyBridgeSolar.staticwebassets.endpoints.json
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/bin/Debug/net8.0/SkyBridgeSolar

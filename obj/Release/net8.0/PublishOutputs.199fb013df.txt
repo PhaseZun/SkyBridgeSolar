@@ -1,0 +1,7 @@
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/out/SkyBridgeSolar
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/out/appsettings.Development.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/out/appsettings.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/out/SkyBridgeSolar.dll
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/out/SkyBridgeSolar.deps.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/out/SkyBridgeSolar.runtimeconfig.json
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/out/SkyBridgeSolar.pdb

@@ -1,0 +1,142 @@
+/* ===========================
+   ANIMATIONS — SKY BRIDGE SOLAR
+   =========================== */
+
+/* Fade Up (default reveal) */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Scale Up */
+@keyframes scaleUp {
+    from { opacity: 0; transform: scale(.94); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Slide In Left */
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-36px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Slide In Right */
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(36px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Counter increment (visual) */
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Sky pulse (icon glow) */
+@keyframes skyPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(14,165,233,.4); }
+    50%       { box-shadow: 0 0 0 12px rgba(14,165,233,0); }
+}
+
+/* Float subtle (hero badge / decorative) */
+@keyframes floatY {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+}
+
+/* Gradient shimmer on hero */
+@keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+/* ===========================
+   REVEAL ON SCROLL
+   =========================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .65s cubic-bezier(.4,0,.2,1),
+                transform .65s cubic-bezier(.4,0,.2,1);
+}
+.reveal.reveal-left  { transform: translateX(-36px); }
+.reveal.reveal-right { transform: translateX(36px); }
+.reveal.reveal-scale { transform: scale(.94); }
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger delays for child items */
+.stagger-children > *:nth-child(1) { transition-delay: .05s; }
+.stagger-children > *:nth-child(2) { transition-delay: .12s; }
+.stagger-children > *:nth-child(3) { transition-delay: .19s; }
+.stagger-children > *:nth-child(4) { transition-delay: .26s; }
+.stagger-children > *:nth-child(5) { transition-delay: .33s; }
+.stagger-children > *:nth-child(6) { transition-delay: .40s; }
+
+/* Apply fade-up to stagger items too */
+.stagger-children > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .55s ease, transform .55s ease;
+}
+.stagger-children.visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===========================
+   SPECIFIC ELEMENT ANIMATIONS
+   =========================== */
+
+/* Hero title shimmer on accent */
+.hero-title .accent-line {
+    background: linear-gradient(90deg, #0EA5E9, #38BDF8, #0EA5E9);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+}
+
+/* Stat number pop */
+.ribbon-num { animation: countUp .6s ease both; }
+
+/* Step icon pulse on hover */
+.process-step:hover .step-icon {
+    animation: skyPulse .6s ease forwards;
+}
+
+/* Service icon badge float */
+.hero-badge { animation: floatY 3s ease-in-out infinite; }
+
+/* FAQ toggle spin */
+.faq-toggle { transition: transform .3s ease, background .3s ease; }
+
+/* Metric card entrance */
+.metric-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .55s ease, transform .55s ease,
+                background .3s ease, border-color .3s ease;
+}
+.metric-card.visible { opacity: 1; transform: translateY(0); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+    .reveal, .stagger-children > * {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
