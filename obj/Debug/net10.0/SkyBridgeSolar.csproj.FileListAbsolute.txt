@@ -96,3 +96,4 @@
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/obj/Debug/net10.0/ref/SkyBridgeSolar.dll
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/obj/Debug/net10.0/compressed/2b06p4bvxt-{0}-r6txb3bmjs-r6txb3bmjs.gz
 /Users/sushantpawar/Personal/Work/SkyBridgeSolar/obj/Debug/net10.0/compressed/zxe33eej66-{0}-gpt6te5noj-gpt6te5noj.gz
+/Users/sushantpawar/Personal/Work/SkyBridgeSolar/obj/Debug/net10.0/SkyBridgeSolar.sourcelink.json
